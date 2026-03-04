@@ -10,7 +10,6 @@
   body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
          background: #0d0f18; color: #e0e4f0; min-height: 100vh; }
 
-  /* Header */
   .header { background: linear-gradient(135deg, #0d1b3e 0%, #1a0d2e 100%);
              padding: 20px 32px; display: flex; justify-content: space-between;
              align-items: center; border-bottom: 1px solid #2a3a5e; }
@@ -23,19 +22,16 @@
 
   .main { padding: 24px 32px; max-width: 1400px; margin: 0 auto; }
 
-  /* Section titles */
   .section-title { font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
                     color: #5566aa; text-transform: uppercase; margin-bottom: 14px;
                     margin-top: 28px; padding-bottom: 6px;
                     border-bottom: 1px solid #1e2440; }
 
-  /* Urgents */
   .urgents { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 8px; }
   .urgent-item { padding: 10px 16px; border-radius: 8px; font-size: 12px;
                   font-weight: 600; border: 1px solid; display: flex;
                   align-items: center; gap: 8px; }
 
-  /* Client grid */
   .client-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
                   gap: 16px; }
   .client-card { background: #13172a; border-radius: 10px; padding: 18px;
@@ -63,11 +59,9 @@
                   background: #1a1200; border-radius: 6px;
                   border-left: 3px solid #ffaa44; }
 
-  /* Two-col layout */
   .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
   .three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
 
-  /* Infra */
   .infra-item { background: #13172a; border-radius: 8px; padding: 12px 16px;
                  display: flex; align-items: center; gap: 10px;
                  border: 1px solid #1e2440; font-size: 12px; }
@@ -75,14 +69,12 @@
   .infra-name { font-weight: 600; color: #ccd4ff; }
   .infra-note { color: #5566aa; font-size: 11px; margin-top: 1px; }
 
-  /* Products */
   .product-item { background: #13172a; border-radius: 8px; padding: 14px 16px;
                    border: 1px solid #1e2440; }
   .product-name { font-weight: 700; color: #fff; margin-bottom: 4px; }
   .product-status { font-size: 12px; color: #7aacff; }
   .product-note { font-size: 11px; color: #5566aa; margin-top: 4px; }
 
-  /* Briefs */
   .brief-card { background: #13172a; border-radius: 10px; padding: 18px;
                  border: 1px solid #1e2440; margin-bottom: 12px; }
   .brief-date { font-size: 13px; font-weight: 700; color: #7aacff; margin-bottom: 10px; }
@@ -90,8 +82,7 @@
                  border-bottom: 1px solid #1a1e30; }
   .brief-item:last-child { border-bottom: none; }
 
-  /* Footer */
-  .footer { text-align: center; padding: 24px; font-size: 11px; color: #3344666;
+  .footer { text-align: center; padding: 24px; font-size: 11px; color: #334466;
              border-top: 1px solid #1a1e30; margin-top: 32px; }
 </style>
 </head>
@@ -100,7 +91,7 @@
 <div class="header">
   <div class="header-left">
     <h1>🗺 5th Floor Media — Ops Dashboard</h1>
-    <p>Last updated: Monday, March 2, 2026 — 3:28 PM MT</p>
+    <p>Last updated: Wednesday, March 4, 2026 — 11:10 AM MT</p>
   </div>
   <div class="header-right">
     <div class="live-badge">● LIVE</div>
@@ -112,121 +103,212 @@
   <!-- URGENT -->
   <div class="section-title">🔴 Urgent & This Week</div>
   <div class="urgents">
-    <div class="urgent-item" style="background:#2b0d0d;color:#cc3333;border-color:#cc3333">⚡ ProCon Report <span style="opacity:0.7;font-weight:400">— March 3 — Tomorrow</span></div>
+    <div class="urgent-item" style="background:#0d2b1a;color:#22aa55;border-color:#22aa55">✅ RootsTech Handout <span style="opacity:0.7;font-weight:400">— Done · Conference tomorrow</span></div>
+    <div class="urgent-item" style="background:#2b2000;color:#ffaa00;border-color:#ffaa00">⚡ Contour Feb Report <span style="opacity:0.7;font-weight:400">— In Progress</span></div>
     <div class="urgent-item" style="background:#2b0d0d;color:#cc3333;border-color:#cc3333">⚡ IWD Report <span style="opacity:0.7;font-weight:400">— Overdue</span></div>
-    <div class="urgent-item" style="background:#2b2000;color:#ffaa00;border-color:#ffaa00">⚡ Contour Display Campaigns <span style="opacity:0.7;font-weight:400">— In Progress</span></div>
-    <div class="urgent-item" style="background:#2b2000;color:#ffaa00;border-color:#ffaa00">⚡ Coconu ROAS Optimization <span style="opacity:0.7;font-weight:400">— This Week</span></div>
-    <div class="urgent-item" style="background:#0d1f2b;color:#3388cc;border-color:#3388cc">⚡ Google Ads API Approval <span style="opacity:0.7;font-weight:400">— 1–2 Business Days</span></div>
+    <div class="urgent-item" style="background:#2b0d0d;color:#cc3333;border-color:#cc3333">⚡ ProCon Report <span style="opacity:0.7;font-weight:400">— Overdue (was March 3)</span></div>
+    <div class="urgent-item" style="background:#0d1f2b;color:#3388cc;border-color:#3388cc">⚡ DAC + Coconu + IWD Access <span style="opacity:0.7;font-weight:400">— Waiting on logins</span></div>
+    <div class="urgent-item" style="background:#1a0d2b;color:#aa77ff;border-color:#aa77ff">⚡ Gmail Integration <span style="opacity:0.7;font-weight:400">— Fix tonight @ 7 PM</span></div>
   </div>
 
-  <!-- CLIENTS -->
-  <div class="section-title">👥 Clients</div>
+  <!-- CLIENTS — 5FM -->
+  <div class="section-title">✈️ Clients — 5th Floor Media</div>
   <div class="client-grid">
 
     <div class="client-card" style="border-left:4px solid #ffaa00">
-        <div class="client-header">
-            <span class="client-icon">✈️</span>
-            <div>
-                <div class="client-name">Contour Aviation</div>
-                <div class="client-service">Meta + Google Ads</div>
-            </div>
-            <span class="status-badge" style="background:#2b2000;color:#ffaa00">Needs Attention</span>
+      <div class="client-header">
+        <span class="client-icon">✈️</span>
+        <div>
+          <div class="client-name">Contour Aviation</div>
+          <div class="client-service">Meta + Google Ads · Impression Guarantee</div>
         </div>
-        <div class="contract-line">📋 80–100K imp/market · 1.2M–1.8M total</div>
-        <div class="metrics"><div class="metric"><div class="metric-val">1.16M</div><div class="metric-label">Meta Imp</div></div><div class="metric"><div class="metric-val">6,722</div><div class="metric-label">Google Clicks</div></div><div class="metric"><div class="metric-val">263</div><div class="metric-label">Leads</div></div><div class="metric"><div class="metric-val">2.31%</div><div class="metric-label">Meta CTR</div></div></div>
-        <div class="tasks"><div class="task open">○ Publish new Super Savers campaign</div><div class="task open">○ Switch PMax → Display for 9 underperforming markets</div><div class="task done">✅ Feb report built & delivered</div></div>
-        <div class="next-action">→ Set up Display campaigns for low-volume markets</div>
+        <span class="status-badge" style="background:#2b2000;color:#ffaa00">In Progress</span>
+      </div>
+      <div class="contract-line">📋 80–100K imp/market · 1.2M–1.8M total · ~$19,800/mo · 18 markets</div>
+      <div class="metrics">
+        <div class="metric"><div class="metric-val">1.16M</div><div class="metric-label">Meta Imp</div></div>
+        <div class="metric"><div class="metric-val">6,722</div><div class="metric-label">Google Clicks</div></div>
+        <div class="metric"><div class="metric-val">263</div><div class="metric-label">Leads</div></div>
+        <div class="metric"><div class="metric-val">2.31%</div><div class="metric-label">Meta CTR</div></div>
+      </div>
+      <div class="tasks">
+        <div class="task open">○ Finalize Feb report — slides + email summary</div>
+        <div class="task open">○ Switch PMax → Display for 9 underperforming markets</div>
+        <div class="task open">○ Publish new Super Savers campaign</div>
+        <div class="task done">✅ Report data pulled</div>
+      </div>
+      <div class="next-action">→ Complete slides + send client email summary</div>
     </div>
-    <div class="client-card" style="border-left:4px solid #ffaa00">
-        <div class="client-header">
-            <span class="client-icon">🛫</span>
-            <div>
-                <div class="client-name">Denver Air Connection</div>
-                <div class="client-service">Meta + Google Ads</div>
-            </div>
-            <span class="status-badge" style="background:#2b2000;color:#ffaa00">Active</span>
+
+    <div class="client-card" style="border-left:4px solid #3388cc">
+      <div class="client-header">
+        <span class="client-icon">🛫</span>
+        <div>
+          <div class="client-name">Denver Air Connection</div>
+          <div class="client-service">Meta + Google Ads · Impression Guarantee</div>
         </div>
-        <div class="contract-line">📋 50–80K imp/market · 1M–1.2M total</div>
-        <div class="metrics"><div class="metric"><div class="metric-val">1.53M</div><div class="metric-label">Total Imp</div></div><div class="metric"><div class="metric-val">1.92%</div><div class="metric-label">Meta CTR</div></div><div class="metric"><div class="metric-val">7.51%</div><div class="metric-label">Google CTR</div></div><div class="metric"><div class="metric-val">✅ Met</div><div class="metric-label">Contract</div></div></div>
-        <div class="tasks"><div class="task open">○ Continue evergreen campaigns for March</div><div class="task open">○ Follow up on new market expansion</div><div class="task done">✅ Feb report built & delivered</div></div>
-        <div class="next-action">→ Contact client re: new markets</div>
+        <span class="status-badge" style="background:#0d1f2b;color:#3388cc">Waiting on Access</span>
+      </div>
+      <div class="contract-line">📋 50–80K imp/market · 1M–1.2M total · ~$18K/mo · 13 markets</div>
+      <div class="metrics">
+        <div class="metric"><div class="metric-val">1.53M</div><div class="metric-label">Total Imp</div></div>
+        <div class="metric"><div class="metric-val">1.92%</div><div class="metric-label">Meta CTR</div></div>
+        <div class="metric"><div class="metric-val">7.51%</div><div class="metric-label">Google CTR</div></div>
+        <div class="metric"><div class="metric-val">✅ Met</div><div class="metric-label">Contract</div></div>
+      </div>
+      <div class="tasks">
+        <div class="task open">○ Obtain Meta + Google Ads access</div>
+        <div class="task open">○ Continue evergreen campaigns for March</div>
+        <div class="task open">○ Follow up on new market expansion</div>
+        <div class="task done">✅ Feb report delivered</div>
+      </div>
+      <div class="next-action">→ Matt to provide ad account access — blocked until resolved</div>
     </div>
-    <div class="client-card" style="border-left:4px solid #ffaa00">
-        <div class="client-header">
-            <span class="client-icon">🌿</span>
-            <div>
-                <div class="client-name">Coconu</div>
-                <div class="client-service">Meta + Google Ads · ROAS</div>
-            </div>
-            <span class="status-badge" style="background:#2b2000;color:#ffaa00">Optimizing</span>
+
+    <div class="client-card" style="border-left:4px solid #3388cc">
+      <div class="client-header">
+        <span class="client-icon">🌿</span>
+        <div>
+          <div class="client-name">Coconu</div>
+          <div class="client-service">Meta + Google Ads · ROAS</div>
         </div>
-        <div class="contract-line">📋 ROAS-focused · target 3x+</div>
-        <div class="metrics"><div class="metric"><div class="metric-val">2.44x</div><div class="metric-label">ROAS (5FM)</div></div><div class="metric"><div class="metric-val">1.52M</div><div class="metric-label">Meta Imp</div></div><div class="metric"><div class="metric-val">9.07%</div><div class="metric-label">Meta CTR</div></div><div class="metric"><div class="metric-val">$20,874</div><div class="metric-label">Revenue</div></div></div>
-        <div class="tasks"><div class="task open">○ Scale Oil Based microsite (top revenue $5,959)</div><div class="task open">○ Fix Gift Set microsite (low 1.5% conv rate)</div><div class="task open">○ Build ROAS calculator</div><div class="task open">○ Add GA4 viewer access</div><div class="task done">✅ Feb report built & delivered</div><div class="task done">✅ ICON comparison analysis complete</div></div>
-        <div class="next-action">→ Sync with Aly — email drafted</div>
+        <span class="status-badge" style="background:#0d1f2b;color:#3388cc">Waiting on Access</span>
+      </div>
+      <div class="contract-line">📋 ROAS-focused · target 3x+</div>
+      <div class="metrics">
+        <div class="metric"><div class="metric-val">2.44x</div><div class="metric-label">ROAS (5FM)</div></div>
+        <div class="metric"><div class="metric-val">1.52M</div><div class="metric-label">Meta Imp</div></div>
+        <div class="metric"><div class="metric-val">9.07%</div><div class="metric-label">Meta CTR</div></div>
+        <div class="metric"><div class="metric-val">$20,874</div><div class="metric-label">Revenue</div></div>
+      </div>
+      <div class="tasks">
+        <div class="task open">○ Obtain Meta + Google Ads access</div>
+        <div class="task open">○ Scale Oil Based microsite (top revenue $5,959)</div>
+        <div class="task open">○ Fix Gift Set microsite (low 1.5% conv rate)</div>
+        <div class="task open">○ Build ROAS calculator</div>
+        <div class="task done">✅ Feb report delivered · ICON analysis complete</div>
+      </div>
+      <div class="next-action">→ Matt to provide ad account access — blocked until resolved</div>
     </div>
+
     <div class="client-card" style="border-left:4px solid #cc3333">
-        <div class="client-header">
-            <span class="client-icon">🛬</span>
-            <div>
-                <div class="client-name">IWD Ironwood Airport</div>
-                <div class="client-service">Google Ads</div>
-            </div>
-            <span class="status-badge" style="background:#2b0d0d;color:#cc3333">Report Overdue</span>
+      <div class="client-header">
+        <span class="client-icon">🛬</span>
+        <div>
+          <div class="client-name">IWD Ironwood Airport</div>
+          <div class="client-service">Google Ads</div>
         </div>
-        <div class="contract-line">📋 Google Ads only</div>
-        
-        <div class="tasks"><div class="task open">○ Build February report</div><div class="task open">○ Obtain Google Ads data/access</div></div>
-        <div class="next-action">→ Matt to provide Google Ads account access</div>
+        <span class="status-badge" style="background:#2b0d0d;color:#cc3333">Report Overdue</span>
+      </div>
+      <div class="contract-line">📋 Google Ads only</div>
+      <div class="tasks">
+        <div class="task open">○ Obtain Google Ads access</div>
+        <div class="task open">○ Build February report</div>
+      </div>
+      <div class="next-action">→ Matt to provide Google Ads account access</div>
     </div>
+
     <div class="client-card" style="border-left:4px solid #cc3333">
-        <div class="client-header">
-            <span class="client-icon">🏗</span>
-            <div>
-                <div class="client-name">ProCon Construction</div>
-                <div class="client-service">Design Retainer</div>
-            </div>
-            <span class="status-badge" style="background:#2b0d0d;color:#cc3333">Report Due Tomorrow</span>
+      <div class="client-header">
+        <span class="client-icon">🏗</span>
+        <div>
+          <div class="client-name">ProCon Construction</div>
+          <div class="client-service">Design Retainer</div>
         </div>
-        <div class="contract-line">📋 Design retainer</div>
-        
-        <div class="tasks"><div class="task open">○ Organize ProCon in ClickUp</div><div class="task open">○ Build March 3 report</div></div>
-        <div class="next-action">→ Matt to organize ClickUp → Lucious builds report</div>
+        <span class="status-badge" style="background:#2b0d0d;color:#cc3333">Report Overdue</span>
+      </div>
+      <div class="contract-line">📋 Design retainer · Report was due March 3</div>
+      <div class="tasks">
+        <div class="task open">○ Confirm ad platforms in use</div>
+        <div class="task open">○ Build overdue report</div>
+      </div>
+      <div class="next-action">→ Matt to confirm platforms → Lucious builds report</div>
     </div>
+
     <div class="client-card" style="border-left:4px solid #888899">
-        <div class="client-header">
-            <span class="client-icon">⏸</span>
-            <div>
-                <div class="client-name">Stockton Airport (SCK)</div>
-                <div class="client-service">TBD</div>
-            </div>
-            <span class="status-badge" style="background:#1a1a2a;color:#888899">On Hold</span>
+      <div class="client-header">
+        <span class="client-icon">⏸</span>
+        <div>
+          <div class="client-name">Stockton Airport (SCK)</div>
+          <div class="client-service">TBD</div>
         </div>
-        <div class="contract-line">📋 Pending approval</div>
-        
-        <div class="tasks"><div class="task open">○ Follow up on client approvals</div></div>
-        <div class="next-action">→ Waiting on client</div>
+        <span class="status-badge" style="background:#1a1a2a;color:#888899">On Hold</span>
+      </div>
+      <div class="contract-line">📋 Pending client approvals</div>
+      <div class="tasks">
+        <div class="task open">○ Follow up on client approvals</div>
+      </div>
+      <div class="next-action">→ Waiting on client</div>
     </div>
+
     <div class="client-card" style="border-left:4px solid #888899">
-        <div class="client-header">
-            <span class="client-icon">👀</span>
-            <div>
-                <div class="client-name">PTTG</div>
-                <div class="client-service">Whitelabel · Comms only</div>
-            </div>
-            <span class="status-badge" style="background:#1a1a2a;color:#888899">Monitoring</span>
+      <div class="client-header">
+        <span class="client-icon">👀</span>
+        <div>
+          <div class="client-name">PTTG</div>
+          <div class="client-service">Whitelabel · Comms only</div>
         </div>
-        <div class="contract-line">📋 Another firm managing</div>
-        
-        <div class="tasks"><div class="task open">○ Maintain periodic comms</div></div>
-        <div class="next-action">→ Define comms cadence with Matt</div>
-    </div>  </div>
+        <span class="status-badge" style="background:#1a1a2a;color:#888899">Monitoring</span>
+      </div>
+      <div class="contract-line">📋 Another firm managing</div>
+      <div class="tasks">
+        <div class="task open">○ Maintain periodic comms</div>
+      </div>
+      <div class="next-action">→ Define comms cadence with Matt</div>
+    </div>
+
+  </div>
+
+  <!-- CLIENTS — HEXAGON -->
+  <div class="section-title">🔷 Hexagon IT Solutions — Enterprise Projects</div>
+  <div class="client-grid">
+
+    <div class="client-card" style="border-left:4px solid #aa77ff">
+      <div class="client-header">
+        <span class="client-icon">🌳</span>
+        <div>
+          <div class="client-name">FamilySearch International</div>
+          <div class="client-service">AI Metadata Pipelines · MSV · QA Systems</div>
+        </div>
+        <span class="status-badge" style="background:#1a0d2b;color:#aa77ff">Conference Tomorrow</span>
+      </div>
+      <div class="contract-line">📋 RootsTech 2026 · Salt Palace · March 5 · VIP Vendor</div>
+      <div class="tasks">
+        <div class="task done">✅ Leadership Q&A submitted in advance (Kris, Kara, Michael)</div>
+        <div class="task done">✅ 2-page leave-behind handout — copy complete, sent to designer</div>
+        <div class="task done">✅ Badges confirmed — pickup before 9 AM with Yachi</div>
+        <div class="task open">○ 4:00 PM — Meeting: Kris Whitehead, Kara Bechtel, Michael Hanson, Ian James</div>
+        <div class="task open">○ 4:30 PM — Meeting: Tom Clark, John Alexander, Gordon Bishop, David Greenwood</div>
+        <div class="task open">○ Vendor networking: IIMI, Lifewood, SBL Corp, Iron Mountain, CloudMojo</div>
+        <div class="task open">○ Attend Ian James AI Tech lecture</div>
+      </div>
+      <div class="next-action">→ Arrive Salt Palace before 9 AM · Find Yachi for badges · Meetings at 4 PM</div>
+    </div>
+
+  </div>
 
   <!-- BRIEFS -->
   <div class="section-title">📋 Executive Briefs</div>
+
+  <div class="brief-card">
+    <div class="brief-date">📅 Wednesday, March 4, 2026</div>
+    <div class="brief-item">• Morning brief delivered (late) — Gartner agency AI consolidation, Google Zero / SEO 2026 trends, aviation pulse</div>
+    <div class="brief-item">• LinkedIn post drafted — "Google Zero Is A Lie" · Option A/B both ready for Matt to choose</div>
+    <div class="brief-item">• FamilySearch RootsTech handout — full copy written, Word doc sent to designer ✅</div>
+    <div class="brief-item">• Tavily search confirmed working — web_search tool broken (Brave endpoint mismatch), TOOLS.md updated</div>
+    <div class="brief-item">• Gmail integration not working — fix scheduled tonight 7 PM with Matt</div>
+    <div class="brief-item">• Dashboard updated to current status</div>
+  </div>
+
   <div class="brief-card">
     <div class="brief-date">📅 Monday, March 2, 2026</div>
-    <div class="brief-item">• Meta + Google reports built for Contour Aviation ✅</div><div class="brief-item">• Denver Air Connection report built (Meta + Google combined) ✅</div><div class="brief-item">• Coconu Feb report built — ROAS 2.44x, ICON comparison ✅</div><div class="brief-item">• Contract compliance: DAC exceeds 1M impression guarantee ✅</div><div class="brief-item">• Contour: switching PMax → Display for 9 low-volume markets</div><div class="brief-item">• Google Ads API Basic Access application submitted</div><div class="brief-item">• ClickUp connected · Mission Control built</div>
+    <div class="brief-item">• Meta + Google reports built for Contour Aviation ✅</div>
+    <div class="brief-item">• Denver Air Connection report built (Meta + Google combined) ✅</div>
+    <div class="brief-item">• Coconu Feb report built — ROAS 2.44x, ICON comparison ✅</div>
+    <div class="brief-item">• Contract compliance: DAC exceeds 1M impression guarantee ✅</div>
+    <div class="brief-item">• Contour: switching PMax → Display for 9 low-volume markets</div>
+    <div class="brief-item">• Google Ads API Basic Access application submitted</div>
+    <div class="brief-item">• ClickUp connected · Mission Control built</div>
   </div>
 
   <!-- BOTTOM ROW -->
@@ -241,7 +323,7 @@
       <div class="product-item" style="margin-bottom:10px">
         <div class="product-name">LinqHive</div>
         <div class="product-status">🔴 Needs Audit</div>
-        <div class="product-note">Schedule audit</div>
+        <div class="product-note">Schedule audit with Matt</div>
       </div>
       <div class="product-item" style="margin-bottom:10px">
         <div class="product-name">EdificeCMS</div>
@@ -253,71 +335,44 @@
       <div class="section-title">⚙️ Infrastructure</div>
       <div class="infra-item" style="margin-bottom:8px">
         <div class="infra-icon">✅</div>
-        <div>
-          <div class="infra-name">Telegram</div>
-          <div class="infra-note">Live · Primary comms</div>
-        </div>
+        <div><div class="infra-name">Telegram</div><div class="infra-note">Live · Primary comms</div></div>
       </div>
       <div class="infra-item" style="margin-bottom:8px">
         <div class="infra-icon">✅</div>
-        <div>
-          <div class="infra-name">Morning Brief</div>
-          <div class="infra-note">9 AM MT daily · Cron running</div>
-        </div>
+        <div><div class="infra-name">Morning Brief</div><div class="infra-note">9 AM MT daily · needs cron fix</div></div>
       </div>
       <div class="infra-item" style="margin-bottom:8px">
         <div class="infra-icon">✅</div>
-        <div>
-          <div class="infra-name">GitHub</div>
-          <div class="infra-note">Lucious-Waynetech</div>
-        </div>
+        <div><div class="infra-name">Tavily Search</div><div class="infra-note">Live via curl · web_search tool broken (Brave)</div></div>
       </div>
       <div class="infra-item" style="margin-bottom:8px">
         <div class="infra-icon">✅</div>
-        <div>
-          <div class="infra-name">Gmail</div>
-          <div class="infra-note">Lucious@mattstringham.com</div>
-        </div>
-      </div>
-      <div class="infra-item" style="margin-bottom:8px">
-        <div class="infra-icon">✅</div>
-        <div>
-          <div class="infra-name">Meta Ads API</div>
-          <div class="infra-note">Contour + DAC + Coconu</div>
-        </div>
-      </div>
-      <div class="infra-item" style="margin-bottom:8px">
-        <div class="infra-icon">✅</div>
-        <div>
-          <div class="infra-name">ClickUp API</div>
-          <div class="infra-note">5th Floor Media folder</div>
-        </div>
-      </div>
-      <div class="infra-item" style="margin-bottom:8px">
-        <div class="infra-icon">✅</div>
-        <div>
-          <div class="infra-name">Tavily Search</div>
-          <div class="infra-note">Web search connected</div>
-        </div>
-      </div>
-      <div class="infra-item" style="margin-bottom:8px">
-        <div class="infra-icon">⏳</div>
-        <div>
-          <div class="infra-name">Google Ads API</div>
-          <div class="infra-note">Basic Access pending approval</div>
-        </div>
+        <div><div class="infra-name">GitHub</div><div class="infra-note">lucious-waynetech · dashboard live</div></div>
       </div>
       <div class="infra-item" style="margin-bottom:8px">
         <div class="infra-icon">🔴</div>
-        <div>
-          <div class="infra-name">GA4 API</div>
-          <div class="infra-note">Not started</div>
-        </div>
+        <div><div class="infra-name">Gmail</div><div class="infra-note">Not connected · Fix tonight 7 PM</div></div>
+      </div>
+      <div class="infra-item" style="margin-bottom:8px">
+        <div class="infra-icon">✅</div>
+        <div><div class="infra-name">Meta Ads API</div><div class="infra-note">Contour + DAC + Coconu</div></div>
+      </div>
+      <div class="infra-item" style="margin-bottom:8px">
+        <div class="infra-icon">✅</div>
+        <div><div class="infra-name">ClickUp API</div><div class="infra-note">5th Floor Media folder</div></div>
+      </div>
+      <div class="infra-item" style="margin-bottom:8px">
+        <div class="infra-icon">⏳</div>
+        <div><div class="infra-name">Google Ads API</div><div class="infra-note">Basic Access pending approval</div></div>
+      </div>
+      <div class="infra-item" style="margin-bottom:8px">
+        <div class="infra-icon">🔴</div>
+        <div><div class="infra-name">GA4 API</div><div class="infra-note">Not started</div></div>
       </div>
     </div>
   </div>
 
 </div>
-<div class="footer">Lucious · 5th Floor Media Ops Dashboard · Auto-refreshes every 5 min · Monday, March 2, 2026 — 3:28 PM MT</div>
+<div class="footer">Lucious · 5th Floor Media + Hexagon IT Ops Dashboard · Auto-refreshes every 5 min · Wednesday, March 4, 2026 — 11:10 AM MT</div>
 </body>
 </html>
